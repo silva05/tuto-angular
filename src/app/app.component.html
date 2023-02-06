@@ -1,0 +1,9 @@
+<h1>*ngFor ejemplo</h1>
+<div class="products--grid">
+  <div *ngFor="let p of products" >
+    <input type="text" [(ngModel)]="widthImg">
+    <img [style.width.px]="widthImg" [src]="p.image" alt="">
+    <h3>{{p.price}}</h3>
+    <p>{{p.name}}</p>
+  </div>
+</div>
