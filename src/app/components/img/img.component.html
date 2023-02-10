@@ -1,1 +1,7 @@
-<img width="200" (load)="imgloaded()" (error)="imgError()" alt="" [src]="img" >
+<!-- VALIDACION CON EVENTO error (INDICA SI IMAGEN CARGO BIEN,
+  SI NO MANDA IMAGEN X DEFECTO. SE AGREGA UN EVENTO load QUE
+  INDICA AL USUARIO CUANDO LA IMAGEN SE CARGÓ CORRECTAMENTE
+-->
+<img width="200" (load)="imgloadhijo()" (error)="imgError()"
+  [src]="img">
+

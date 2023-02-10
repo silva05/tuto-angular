@@ -63,5 +63,10 @@
   </div>
 </div>
 -->
-<p><input widht="1000" type="text" [(ngModel)]="imgParent"></p>
-<app-img (loaded)="onLoaded()" [img]= "imgParent" ></app-img> <!-- COMPONENTE HIJO -->
+<h1>INPUTS Y OUTPUTS CON IMAGEN</h1>
+<p><input type="text" [(ngModel)]="imgParent"></p>
+<!-- SE MANDA EL COMANDO LOADED A LA CLASE PADRE DONDE
+    LOADED ES LA VARIABLE OUTPUT DEFINIDA EN EL HIJO Y
+    ON LOADED ES EL METODO CREADO EN EL PADRE -->
+<app-img (loaded)="loadpadre($event)" [img]= "imgParent" >
+  </app-img> <!-- COMPONENTE HIJO -->
